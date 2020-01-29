@@ -1,0 +1,107 @@
+.location-wrapper {
+  position: relative;
+}
+
+.about {
+  .location-wrapper {
+    background-color: $s-lightest;
+  }
+}
+
+.location {
+  position: relative;
+
+  padding-top: 114px;
+
+  color: $white;
+}
+
+.location-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 800px;
+
+  background-image: url("./assets/images/location-img.jpg");
+}
+
+.location-title {
+  font-weight: 400;
+}
+
+.location-detail {
+  width: 350px;
+}
+
+.location-detail-description {
+  margin-bottom: 78px;
+}
+
+.location-detail-address {
+  margin-bottom: 37px;
+
+  font-weight: 600;
+}
+
+.location-map {
+  width: 100%;
+  height: 440px;
+  overflow: hidden;
+
+  border-radius: 5px;
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.11);
+
+  & > div {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@include respond-to(sm-down) {
+  .location-title {
+    margin-bottom: 40px;
+  }
+
+  .location-detail-description {
+    margin-bottom: 40px;
+  }
+}
+
+
+@include respond-to(sm) {
+  .location {
+    flex-direction: column;
+    padding-top: 50px;
+
+    .col-info {
+      width: 545px;
+    }
+
+    .t-header-sm {
+      font-size: 18px;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .location {
+    flex-direction: column;
+    padding-top: 50px;
+
+    .col-info {
+      width: 100%;
+    }
+    
+    .location-detail {
+      width: 100%;
+    }
+
+    .location-detail-description {
+      margin-bottom: 20px;
+    }
+  }
+}

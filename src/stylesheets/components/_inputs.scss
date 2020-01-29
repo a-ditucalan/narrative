@@ -1,0 +1,100 @@
+.input {
+  font-family: $font-inter-ui, $text-font-stack;
+  font-size: 16px;
+  font-weight: 400;
+  color: $black;
+
+  border: 1px $gray solid;
+  transition: border-color .2s;
+
+  &::placeholder {
+    font-family: $font-inter-ui, $text-font-stack;
+    font-size: 16px;
+    font-weight: 400;
+    color: $s-darkest;
+  }
+
+  &:focus {
+    outline-color: transparent;
+    border: 1px $blue solid;
+  }
+}
+
+.input-lg {
+  padding-right: 30px;
+  padding-left: 30px;
+  height: 60px;
+}
+
+.input-sm {
+  padding-right: 15px;
+  padding-left: 15px;
+  height: 35px;
+}
+
+.input-invi-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  width: 100%;
+}
+
+.input-error-message {
+  position: absolute;
+  top: 100%;
+  left: 0;
+
+  padding: 0;
+  width: 100%;
+  max-height: 0;
+  
+  font-family: $font-inter-ui, $text-font-stack;
+  font-size: 10px;
+  font-weight: 500;
+  color: $white;
+  text-align: left;
+
+  background-color: $red;
+  transition: .2s;  
+
+  .exclamation {
+    padding-right: 12px;
+
+    font-weight: 700;
+  }
+
+  &.relative {
+    position: relative;
+    top: auto;
+    left: auto;
+
+    margin-top: 20px;
+  }
+}
+
+.on-error {
+  input {
+    border: 1px $red solid;
+  }
+
+  .input-error-message {
+    padding: 3px 15px 5px;
+    max-height: 50px;
+
+    border: 1px $red solid;
+  }
+}
+
+.input-select {
+  background-color: transparent;
+  
+  cursor: pointer;
+  transition: .2s;
+
+  &:focus {
+    outline-color: transparent;
+    border: 1px $blue solid;
+    box-shadow: none;
+  }
+}

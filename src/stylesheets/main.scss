@@ -1,0 +1,54 @@
+//base
+@import
+  'utils/variables',
+  'utils/functions',
+  'utils/mixins';
+
+//utils
+@import
+  "base/base",
+  "base/fonts",
+  "base/typography";
+  // 'base/helpers';
+
+//layout
+@import 
+  'layout/header',
+  'layout/footer',
+  'layout/cta',
+  'layout/perspectives',
+  'layout/newsletter',
+  'layout/banner',
+  'layout/location',
+  'layout/job-callout',
+  'layout/hero-card';
+
+//components
+@import
+  'components/buttons',
+  'components/inputs',
+  'components/cards',
+  'components/socials',
+  'components/rollovers',
+  'components/forms',
+  'components/burger';
+
+//pages
+@import
+  'pages/home',
+  'pages/platform-distribute',
+  'pages/solution', 
+  'pages/about',
+  'pages/about-alt',
+  'pages/blog-perspectives',
+  'pages/contact',
+  'pages/blog-post',
+  'pages/pricing',
+  'pages/pricing-cta',
+  'pages/get-started',
+  'pages/login',
+  'pages/careers',
+  'pages/privacypolicy',
+  'pages/career-description',
+  'pages/thanks',
+  'pages/oops-404';

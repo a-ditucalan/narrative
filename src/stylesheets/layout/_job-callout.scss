@@ -1,0 +1,37 @@
+.job {
+  display: flex;
+  align-items: baseline;
+  padding: 27px 30px;
+  margin-bottom: 10px;
+
+  color: $black;
+  text-decoration: none;
+
+  background-color: $white;
+  border-radius: 5px;
+
+  &:hover {
+    .job-position {
+      color: $blue;
+      font-weight: 600;
+    }
+  }
+}
+
+.job-position {
+  margin-right: auto;
+}
+
+.job-url {
+  margin-left: 105px;
+}
+
+@media screen and (max-width: 375px) {
+  .job {
+    flex-direction: column;
+  }
+
+  .job-url {
+    align-self: flex-end;
+  }
+}

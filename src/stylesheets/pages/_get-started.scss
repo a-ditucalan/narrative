@@ -1,0 +1,179 @@
+.get-started-wrapper {
+  .banner-wrapper {
+    background-position-y: bottom;
+  }
+}
+
+.get-started {
+  @extend %content-width;
+
+  padding-top: 80px;
+  padding-bottom: 178px;
+
+  .banner-wrapper {
+    background-position-y: bottom;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+  }
+
+  .col {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+
+  .col-full {
+    width: 100%;
+  }
+
+  .col-sub {
+    width: 25%;
+  }
+
+  .col-main {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    width: 75%;
+  }
+
+  .btn-sched {
+    min-width: 255px;
+  }
+
+  .form-default {
+    margin-top: 75px;
+  }
+}
+
+@include respond-to(lg) {
+  .get-started {
+    .t-header-md {
+      font-size: 30px;
+    }
+  }
+}
+
+@include respond-to(lg-down) {
+  .get-started { 
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+    .btn-sched {
+      min-width: 220px;
+    }
+
+    .form-default {
+      margin-top: 50px;
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .get-started {
+    padding-top: 30px;
+    padding-bottom: 80px;
+
+    .col-main,
+    .col-sub {
+      width: 100%;
+    }
+
+    .t-header-md {
+      font-size: 23px;
+    }
+
+    .t-h4 {
+      font-size: 20px;
+    }
+
+    .t-sub1,
+    .t-body-sm {
+      font-size: 14px;
+    }
+
+    .t-body-md {
+      font-size: 14px;
+    }
+
+    .t-header-sm {
+      font-size: 20px;
+    }
+
+    .btn-sched {
+      min-width: 180px;
+    }
+
+    .btn-wob {
+      padding-right: 30px;
+      padding-left: 30px;
+      height: 45px;
+
+      font-size: 13px;
+    }
+
+    .form-default {
+      margin-top: 30px;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .get-started {
+    padding-bottom: 50px;
+
+    .row {
+      margin-right: -10px;
+      margin-left: -10px;
+    }
+
+    .col {
+      padding-right: 10px;
+      padding-left: 10px;
+    }
+
+    .col-main,
+    .col-sub {
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .t-header-md {
+      font-size: 19px;
+    }
+
+    .t-h4 {
+      font-size: 18px;
+    }
+
+    .btn-wob {
+      width: 100%;
+    }
+
+    .btn-send {
+      margin-top: 20px;
+    }
+  }
+
+  .form-label-checkbox {
+    padding-right: 0;
+    padding-left: 30px;
+
+    &:before {
+      right: auto;
+      left: 0;
+    }
+
+    &:after {
+      right: auto;
+      left: 3px;
+    }
+  }
+}
+

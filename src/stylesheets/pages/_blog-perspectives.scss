@@ -1,0 +1,101 @@
+.blog {
+  @extend %header-space-top;
+
+  position: relative;
+}
+
+.blog-gray-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  
+  width: 100%;
+  height: 540px;
+
+  background-color: $s-lightest;
+}
+
+.blog-header {
+  @extend %content-width;
+
+  text-align: center;
+
+  img {
+    margin-right: 24px;
+    width: 54px;
+  }
+
+  .t-header-sm {
+    margin-top: 8px;
+  }
+}
+
+.blog-cards-wrapper {
+  @extend %content-width;
+}
+
+.blog-all-cards {
+  @extend %content-width;
+
+  .load-more-holder {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .btn-more {
+    margin-top: 80px;
+    margin-bottom: 180px;
+  }
+}
+
+@include respond-to(lg) {
+  .blog {
+    .content-cards {
+      justify-content: space-around;
+    }
+  }
+}
+
+@include respond-to(md-down) {
+  .blog-all-cards {
+    .btn-more {
+      margin-top: 40px;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .blog {
+    .blog-header {
+      padding-top: 64px;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .blog {
+    .blog-header {
+      padding-left: 30px ;
+      padding-right: 30px ;
+    }
+
+    .blog-perspectives-title {
+      .t-h1 {
+        font-size: 32px;
+      }
+    }
+
+    .blog-header img {
+      margin-right: 10px;
+      width: 30px;
+    }
+
+    .byline-author,
+    .byline-more,
+    .byline-position {
+      font-size: 12px;
+    }    
+  }
+}

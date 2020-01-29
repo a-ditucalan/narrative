@@ -1,0 +1,32 @@
+//Euclid Circfular A Family
+@include font-face($font-euclid, 'assets/fonts/', 'EuclidCircularA-Light', 'EuclidCircularA-Light', 300);
+@include font-face($font-euclid, 'assets/fonts/', 'EuclidCircularA-LightItalic', 'EuclidCircularA-LightItalic', 300, italic);
+@include font-face($font-euclid, 'assets/fonts/', 'EuclidCircularA-Regular', 'EuclidCircularA-Regular', 400);
+@include font-face($font-euclid, 'assets/fonts/', 'EuclidCircularA-RegularItalic', 'EuclidCircularA-RegularItalic', 400, italic);
+@include font-face($font-euclid, 'assets/fonts/', 'EuclidCircularA-Medium', 'EuclidCircularA-Medium', 500);
+@include font-face($font-euclid, 'assets/fonts/', 'EuclidCircularA-MediumItalic', 'EuclidCircularA-MediumItalic', 500, italic);
+@include font-face($font-euclid, 'assets/fonts/', 'EuclidCircularA-Semibold', 'EuclidCircularA-Semibold', 600);
+@include font-face($font-euclid, 'assets/fonts/', 'EuclidCircularA-SemiboldItalic', 'EuclidCircularA-SemiboldItalic', 600, italic);
+@include font-face($font-euclid, 'assets/fonts/', 'EuclidCircularA-Bold', 'EuclidCircularA-Bold', 700);
+@include font-face($font-euclid, 'assets/fonts/', 'EuclidCircularA-BoldItalic', 'EuclidCircularA-BoldItalic', 700, italic);
+
+
+//Helvetica Monospaced Family
+@include font-face($font-helvetica-monospaced, 'assets/fonts/', 'HelveticaMonospacedPro-Rg', 'HelveticaMonospacedPro-Rg', 400);
+@include font-face($font-helvetica-monospaced, 'assets/fonts/', 'HelveticaMonospacedPro-It', 'HelveticaMonospacedPro-It', 400, italic);
+@include font-face($font-helvetica-monospaced, 'assets/fonts/', 'HelveticaMonospacedPro-Bd', 'HelveticaMonospacedPro-Bd', 700);
+@include font-face($font-helvetica-monospaced, 'assets/fonts/', 'HelveticaMonospacedPro-BdIt', 'HelveticaMonospacedPro-BdIt', 700, italic);
+
+//Inter UI Family
+@include font-face($font-inter-ui, 'assets/fonts/', 'InterUI-Regular', 'InterUI-Regular', 400);
+@include font-face($font-inter-ui, 'assets/fonts/', 'InterUI-Italic', 'InterUI-Italic', 400, italic);
+@include font-face($font-inter-ui, 'assets/fonts/', 'InterUI-Medium', 'InterUI-Medium', 500);
+@include font-face($font-inter-ui, 'assets/fonts/', 'InterUI-MediumItalic', 'InterUI-MediumItalic', 500, italic);
+@include font-face($font-inter-ui, 'assets/fonts/', 'InterUI-SemiBold', 'InterUI-SemiBold', 600);
+@include font-face($font-inter-ui, 'assets/fonts/', 'InterUI-SemiBoldItalic', 'InterUI-SemiBoldItalic', 600, italic);
+@include font-face($font-inter-ui, 'assets/fonts/', 'InterUI-Bold', 'InterUI-Bold', 700);
+@include font-face($font-inter-ui, 'assets/fonts/', 'InterUI-BoldItalic', 'InterUI-BoldItalic', 700, italic);
+@include font-face($font-inter-ui, 'assets/fonts/', 'InterUI-ExtraBold', 'InterUI-ExtraBold', 800);
+@include font-face($font-inter-ui, 'assets/fonts/', 'InterUI-ExtraBoldItalic', 'InterUI-ExtraBoldItalic', 800, italic);
+@include font-face($font-inter-ui, 'assets/fonts/', 'InterUI-Black', 'InterUI-Black', 900);
+@include font-face($font-inter-ui, 'assets/fonts/', 'InterUI-BlackItalic', 'InterUI-BlackItalic', 900, italic);

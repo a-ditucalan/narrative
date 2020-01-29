@@ -1,0 +1,36 @@
+<svg width="168" height="247" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="249" width="170" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1" stroke-width="3" stroke="#E6E6E6" fill-rule="nonzero" fill="none">
+   <g id="svg_2">
+    <circle id="svg_3" fill="#FFF" r="30.5" cy="180.5" cx="20"/>
+    <path id="svg_4" d="m8.478,180.47l8.487,8.487l15.913,-15.913"/>
+   </g>
+   <g id="svg_5">
+    <circle id="svg_6" fill="#FFF" r="24.5" cy="140.5" cx="93.5"/>
+    <path id="svg_7" d="m84.244,140.476l6.818,6.818l12.782,-12.784"/>
+   </g>
+   <g id="svg_8">
+    <circle id="svg_9" fill="#FFF" r="21" cy="224" cx="127"/>
+    <path id="svg_10" d="m119.067,223.98l5.843,5.843l10.957,-10.956"/>
+   </g>
+   <g id="svg_11">
+    <circle id="svg_12" fill="#FFF" r="21" cy="102" cx="31.5"/>
+    <path id="svg_13" d="m23.567,101.98l5.843,5.843l10.957,-10.956"/>
+   </g>
+   <g id="svg_14">
+    <circle id="svg_15" fill="#FFF" r="16.5" cy="33.5" cx="59.5"/>
+    <path id="svg_16" d="m53.267,33.484l4.591,4.591l8.609,-8.608"/>
+   </g>
+   <g id="svg_17">
+    <circle id="svg_18" fill="#FFF" r="30.5" cy="32.5" cx="136.5"/>
+    <path id="svg_19" d="m124.978,32.47l8.487,8.487l15.913,-15.913"/>
+   </g>
+  </g>
+ </g>
+</svg>

@@ -1,0 +1,15 @@
+.callout {
+  border: 1px transparent solid;
+
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover {
+    box-shadow: 0 12px 32px -7px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    box-shadow: none;
+    border: 1px $blue solid;
+  }
+}

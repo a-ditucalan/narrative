@@ -1,0 +1,100 @@
+.about-company {
+  @extend %content-width;
+  
+  margin-top: 74px;
+
+  .t-h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.about-company-info {
+  display: flex;
+  justify-content: space-between;
+
+  .info-general {
+    width: 665px;
+
+    .t-header-md {
+      margin-bottom: 26px;
+    }
+  }
+
+  .info-nutshell {
+    width: 350px;
+
+    .t-h4 {
+      margin-bottom: 14px;
+    }
+
+    ul {
+      padding-left: 36px;
+    }
+
+    li {
+      position: relative;
+    }
+
+    li:before {
+      content: '•';
+      position: absolute;
+      top: -2px;
+      left: -26px;
+    }
+  }
+}
+
+.about-hero-card {
+  padding-top: 68px;
+  padding-bottom: 80px;
+}
+
+@include respond-to (lg-down) {
+  .about-company-info {
+    .info-general {
+      width: 500px;
+    }
+
+    .info-nutshell {
+      width: 350px;
+    }
+  }
+}
+
+@include respond-to (md-down) {
+  .about-company-info {
+    .info-general {
+      width: 350px;
+    }
+
+    .info-nutshell {
+      width: 350px;
+    }
+  }
+
+  .about-hero-card {
+    padding-top: 34px;
+    padding-bottom: 40px;
+  }
+}
+
+@include respond-to (sm-down) {
+  .about-company-info {
+    flex-direction: column;
+
+    .info-general,
+    .info-nutshell {
+      width: 100%;
+    }
+
+    .info-nutshell {
+      margin-top: 26px;
+    }
+  }
+}
+
+@include respond-to (xs) { 
+  .about-company {
+    margin-top: 40px;
+  }
+}

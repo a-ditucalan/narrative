@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="167" height="224" viewBox="0 0 167 224">
+    <g fill="none" fill-rule="nonzero">
+        <g transform="matrix(-1 0 0 1 82 0)">
+            <rect width="81.395" height="21.794" y=".131" fill="#E6E6E6" rx="5"/>
+            <ellipse cx="12.046" cy="11.573" fill="#FFF" rx="2.279" ry="2.293"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 82 50.5)">
+            <rect width="81.395" height="21.794" y=".131" fill="#E6E6E6" rx="5"/>
+            <ellipse cx="12.046" cy="11.573" fill="#FFF" rx="2.279" ry="2.293"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 82 101)">
+            <rect width="81.395" height="21.794" y=".131" fill="#E6E6E6" rx="5"/>
+            <ellipse cx="12.046" cy="11.573" fill="#FFF" rx="2.279" ry="2.293"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 82 151.5)">
+            <rect width="81.395" height="21.794" y=".131" fill="#E6E6E6" rx="5"/>
+            <ellipse cx="12.046" cy="11.573" fill="#FFF" rx="2.279" ry="2.293"/>
+        </g>
+        <g transform="matrix(-1 0 0 1 82 202)">
+            <rect width="81.395" height="21.794" y=".131" fill="#E6E6E6" rx="5"/>
+            <ellipse cx="12.046" cy="11.573" fill="#FFF" rx="2.279" ry="2.293"/>
+        </g>
+        <path stroke="#E6E6E6" stroke-width="3" d="M81 12.823h35.5c6.627 0 12 5.372 12 12V76c0 6.627 5.373 12 12 12h26M81 61.5h17.5c11.046 0 20 8.954 20 20s8.954 20 20 20h28M81 212h35.5c6.627 0 12-5.373 12-12v-51.177c0-6.628 5.373-12 12-12h26M81 163.5h17.5c11.046 0 20-8.954 20-20s8.954-20 20-20h28m-.5-11H81h85z"/>
+    </g>
+</svg>

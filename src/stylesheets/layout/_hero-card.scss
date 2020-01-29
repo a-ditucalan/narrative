@@ -1,0 +1,149 @@
+.hero-card {
+  @extend %content-width;
+
+  display: flex;
+  margin-top: 72px;
+  margin-bottom: 120px;
+  height: 440px;
+  overflow: hidden;
+
+  color: $black;
+  text-decoration: none;
+
+  background-color: $white;
+  box-shadow: 0 30px 60px 0 rgba(0, 0, 0, 0.11);
+  border-radius: 5px;
+
+  cursor: pointer;
+  transition: .2s;
+
+  &:hover {
+    transform: scale(1.02);
+  }  
+
+  &:active {
+    border: 1px $blue solid;
+    transform: scale(1);
+    box-shadow: none;
+  }
+
+  .hero-card-img {
+    width: 595px;
+  }
+
+  .hero-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 47px 64px 56px 70px;
+    width: 505px;
+  }
+
+  .details-title {
+    width: 350px;
+    margin: 22px 0;
+  }
+
+  .details-excerpt {
+    width: 350px;
+  }
+
+  .details-tag-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .details-date {
+    font-weight: 400;
+  }
+
+  .byline {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .byline-author {
+    margin-right: 9px;
+
+    font-weight: 700;
+  }
+
+  .byline-more {
+    margin-left: auto;
+
+    font-weight: 600;
+    color: $blue;
+  }
+}
+
+@include respond-to(md-down) {
+  .hero-card {
+    height: auto;
+    flex-direction: column;
+
+    .hero-card-img {
+      width: 100%;
+      height: 530px;
+    }
+
+    .hero-card-info {
+      padding: 47px 30px 56px 30px;
+      width: 100%;
+    }
+
+    .details-excerpt {
+      margin-top: 20px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .hero-card {
+    .hero-card-img {
+      width: 100%;
+      height: 400px;
+    }
+
+    .hero-card-info {
+      padding: 47px 30px 56px 30px;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .hero-card {
+    padding-right: 0;
+    padding-left: 0;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    width: calc(100% - 60px);
+
+    .hero-card-img {
+      width: 100%;
+      height: 65vw;
+    }
+
+    .hero-card-info {
+      padding: 30px;
+    }
+
+    .details-title {
+      width: 100%;
+    }
+
+    .details-excerpt {
+      margin-bottom: 25px;
+      width: 100%;
+    }
+
+    .byline {
+      flex-direction: column;
+    }
+
+    .byline-more {
+      margin-left: auto;
+    }
+  }
+}

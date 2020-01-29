@@ -1,0 +1,42 @@
+.thanks {
+  @extend %header-space-top;
+
+  .content-cards {
+    margin-top: 62px;
+    margin-bottom: 60px;
+  }
+}
+
+.thanks-text {
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-top: 49px;
+  
+  text-align: center;
+
+  .t-h1 {
+    margin-bottom: 21px;
+
+    line-height: 1.05;
+  }
+
+  .t-header-md {
+    margin-bottom: 64px;
+  }
+
+  .t-header-sm {
+    margin-bottom: 50px;
+  }
+}
+
+.thanks-perspectives-title {
+  text-align: center;
+
+  img {
+    margin-right: 17px;
+  }
+
+  .t-header-lg {
+    font-weight: 400;
+  }
+}

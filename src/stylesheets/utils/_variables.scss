@@ -1,0 +1,116 @@
+$font-euclid: "Euclid Circular A";
+$font-helvetica-monospaced: "Helvetica Monospaced Pro";
+$font-inter-ui: "Inter UI";
+
+// @type List
+$text-font-stack: "Helvetica Neue Light", "Helvetica Neue", "Helvetica", "Arial",
+  sans-serif !default;
+
+// Code (monospace) font family
+// @type List
+$code-font-stack: "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+  "Monaco", monospace !default;
+
+/* 
+* Relative or absolute URL where all assets are served from
+* @type String
+* @example scss - When using a CDN
+* $base-url: 'http://cdn.example.com/assets/';
+*/
+$base-url: "../assets/" !default;
+
+// Colors
+
+/*
+*  Primary Colors
+*  Narrative Blue (0032E6) is the primary color for buttons and links.
+*  The shades are color variations to be used for illustrations,
+*  data visualizations, button hover states, button pressed states.
+*/
+
+$blue: #0032e6;
+$blue-vlight: #1b82ff;
+$blue-light: #0962ff;
+$blue-dark: #0000b8;
+$blue-vdark: #000b66;
+
+/*
+*  Secondary Colors
+*  Secondary colors are primarily used for confirmation, caution,
+*  and error states. They can also be used for illustrations,
+*  alternative background colors and data visualizations.  
+*/
+
+$green: #00d481;
+$green-vlight: #c8e5ce;
+$green-light: #03e089;
+$green-dark: #00c97a;
+$green-darkest: #00d878;
+
+$yellow: #ffd272;
+$yellow-vlight: #ffeeb8;
+$yellow-light: #ffe696;
+$yellow-dark: #fac769;
+
+$red: #ff425a;
+$red-vlight: #ffd0cb;
+$red-light: #ff6167;
+$red-dark: #ee3a50;
+
+/* 
+*  Black 
+*  - Logo color on light backgrounds
+*  - Website and interface backgrounds
+*/
+
+$black: #000000;
+
+/* 
+*  Dark shades 
+*  - Dark website and interface backgrounds
+*  - Secondary Text
+*/
+
+$s-dark: #2d2d2d;
+$s-darker: #212121;
+$s-darkest: #151515;
+
+/* 
+*  Middle Gray 
+*  - Secondary header/copy
+*  - Disabled button states
+*  - Hairline illustration
+*/
+
+$gray: #a3a3a3;
+
+/* 
+*  Light shades 
+*  - Light website and interface backgrounds
+*  - Hairline illustration
+*/
+
+$s-lightest: #fafafa;
+$s-lighter: #efefef;
+$s-light: #e6e6e6;
+
+/* 
+*  White 
+*  - Logo color on dark backgrounds
+*  - Website and interface backgrounds
+*/
+
+$white: #ffffff;
+
+/*
+*  Other Shades of Gray ;)
+*/
+$gray-hollow: #f6f6f6;
+$gray-ash: #bfbfbf;
+
+/*
+* Social Colors
+*/
+$c-twitter: #1da1f2;
+$c-linkedin: #0077b5;
+$c-facebook: #3b5998;

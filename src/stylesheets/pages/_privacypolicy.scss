@@ -1,0 +1,53 @@
+.privacy-policy {
+  .privacy-policy-banner-wrapper {
+    @extend %header-space-top;
+    height: 360px;
+
+    background-color: $s-lightest;
+
+    .privacy-policy-banner-holder {
+      @extend %content-width;
+    }
+  }
+  .privacy-policy-narrative-wrapper {
+    width: 730px;
+    margin: 0 auto;
+    height: 1700px;
+    .policy-sub-title {
+      margin-top: 105px;
+      margin-bottom: 39px;
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .privacy-policy {
+    .privacy-policy-narrative-wrapper {
+      width: 100%;
+      margin: 0 auto;
+      height: 1700px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .privacy-policy-banner-holder {
+      padding-top: 64px;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .privacy-policy {
+    .privacy-policy-narrative-wrapper {
+      width: 100%;
+      margin: 0 auto;
+      height: 1700px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .privacy-policy-banner-holder {
+      padding-top: 64px;
+    }
+  }
+}

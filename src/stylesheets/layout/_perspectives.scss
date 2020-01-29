@@ -1,0 +1,71 @@
+.perspectives-wrapper {
+  padding-top: 174px;
+  padding-bottom: 145px;
+}
+
+.perspectives {
+  @extend %content-width;
+
+  .perspectives-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 68px;
+  }
+
+  .branding {
+    img {
+      margin-right: 18px;
+    }
+  }
+
+  .t-h2 {
+    font-weight: normal;
+  }
+}
+
+@include respond-to(md-down) {
+  .content-cards {
+    justify-content: space-around !important;
+  }
+
+  .perspectives-wrapper {
+    padding-top: 30px;
+    padding-bottom: 100px;
+  }
+
+  .perspectives {
+    .perspectives-header {
+      flex-direction: column;
+    }
+
+    .branding {
+      display: flex;
+      margin-bottom: 15px;
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .perspectives {
+    .perspectives-header {
+      align-items: center;
+      margin-bottom: 38px;
+
+      .subtitle {
+        text-align: center;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .perspectives-wrapper { 
+    padding-top: 40px;
+    padding-bottom: 20px;
+  }
+
+  .perspectives {
+    overflow: visible;
+  }
+}

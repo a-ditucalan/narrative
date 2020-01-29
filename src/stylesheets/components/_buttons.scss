@@ -1,0 +1,103 @@
+// WOB = White text On Blue Background
+// BOW = Blue text On White Background
+
+.btn {
+  font-family: $font-inter-ui, $text-font-stack;
+  font-weight: 600;
+  text-transform: uppercase;
+
+  border: none;
+  
+  cursor: pointer;
+  transition: .2s;
+
+  &:active {
+    transition: 0s;
+  }
+
+  &:focus {
+    outline-color: transparent !important;
+  }
+}
+
+.btn-lg {
+  padding-right: 40px;
+  padding-left: 40px;
+  height: 60px;
+
+  font-size: 14px;
+
+  border-radius: 40px;
+}
+
+.btn-sm {
+  padding-right: 20px;
+  padding-left: 20px;
+  height: 35px;
+
+  font-size: 12px;
+
+  border-radius: 20px;
+}
+
+.btn-wob {
+  color: $white;
+
+  background-color: $blue;
+
+  &:hover {    
+    background-color: $blue-light;
+  }
+
+  &:active {
+    color: $gray;
+    background-color: $blue-vdark;
+  }
+}
+
+.btn-bow {
+  color: $blue;
+
+  background-color: $white;
+
+  &:hover {    
+    background-color: $s-lighter;
+  }
+
+  &:active {
+    color: $gray;
+    background-color: $s-light;
+  }
+}
+
+.btn-min-width {
+  min-width: 205px;
+}
+
+.btn-send {
+  position: relative;
+
+  .thumb {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    font-size: 22px;
+
+    visibility: hidden;
+  }
+}
+
+.btn-success {
+  background-color: $green;
+  pointer-events: none;
+
+  .original-message {
+    visibility: hidden;
+  }
+
+  .thumb {
+    visibility: visible;
+  }
+}

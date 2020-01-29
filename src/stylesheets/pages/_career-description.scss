@@ -1,0 +1,485 @@
+.career-description {
+  .career-width {
+    width: 730px;
+    margin: 0 auto;
+  }
+
+  .btn-bow {
+    border: 1px solid $blue; 
+  }
+
+  .input-select {
+    background-image: url('assets/images/icon-down-caret.svg'), linear-gradient(#fff 50%, $s-lightest);
+    background-position: calc(100% - 32px) center;
+    background-repeat: no-repeat;
+  }
+  
+  .select-holder {
+    position: relative;
+    width: fit-content;
+
+    select {
+      cursor: pointer;
+    }
+    
+    .fa-chevron-down {
+      position: absolute;
+      right: 4%;
+      top: 25%;
+      transform: translate(-50%,50%);
+  
+      color: $blue;  
+    }
+  }
+
+  .veteran-wrapper,
+  .disability-holder {
+    .select-holder{
+      width: 100%;
+    }
+  }
+
+  .disability-holder {
+    .select-holder {
+      margin-bottom: 85px;
+    }
+  } 
+  
+
+  .career-desc-banner-wrapper {
+    @extend %header-space-top;
+    position: relative;
+    padding-top: 115px;
+    height: 540px;
+
+    background-color: $s-lightest;
+
+    .career-desc-banner-holder {
+      @extend %content-width;
+      padding-top: 71px;
+
+      .btn-sm {
+        margin-bottom: 58px;
+      }
+    }
+
+    .desc-margin {
+      margin-bottom: 27px;
+    }
+  }
+
+  .career-desc-title-wrapper {
+    display: flex;
+    white-space: nowrap;
+
+    .btn-lg {
+      margin-left: 108px;
+    }
+  }
+
+  .job-description-wrapper {
+    padding-top: 85px;
+  }
+
+  .job-title {
+    margin-bottom: 41px;
+  }
+
+  .overview-title {
+    margin-bottom: 34px;
+  }
+
+  .overview-content {
+    line-height: 1.75;
+    margin-bottom: 78px;
+  }
+
+  .job-description-duties {
+    display: flex;
+    margin-bottom: 86px;
+  }
+
+  .job-description-duties-holder {
+    ul {
+      list-style-type: disc;
+      line-height: 2;
+
+      li {
+        margin-bottom: 20px;
+      }
+
+      li:last-child {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .job-description-duties-holder-left {
+    flex-basis: 73%;
+  }
+
+  .job-description-duties {
+    display: flex;
+
+    .job-description-duties-holder-left {
+      flex-basis: 73%;
+    }
+  }
+
+  .job-description-duties-holder {
+    ul {
+      list-style-type: disc;
+      line-height: 2;
+
+      li {
+        margin-bottom: 20px;
+      }
+    }
+  }
+
+  .about-narrative-wrapper {
+    margin-top: 83px;
+    margin-bottom: 79px;
+
+    .about-content {
+      margin-bottom: 38px;
+    }
+  }
+  .perks-benefits-wrapper {
+    display: flex;
+  }
+
+  .perks-benefits-holder-left {
+    flex-basis: 40%;
+  }
+
+  .perk-benefits-list {
+    list-style-type: disc;
+  }
+
+  .about-title {
+    margin-bottom: 31px;
+  }
+
+  .career-apply-job-wrapper {
+    .apply-title {
+      margin-bottom: 32px;
+    }
+    .apply-job-form {
+      .input-apply {
+        width: 350px;
+
+        background-color: $white;
+      }
+
+      .input-lg {
+        padding-right:0px;
+        padding-left: 31px;
+      }
+
+      .name-holder,
+      .contact-email-holder,
+      .profile-holder {
+        display: flex;
+        // justify-content: space-evenly;
+        margin-bottom: 41px;
+
+        .mr {
+          margin-right: 30px;
+        }
+
+        .mb {
+          margin-bottom: 11px;
+        }      
+      }
+
+      .resume-holder {
+        margin-top: 41px;
+      }
+
+      .contact-select {
+        background-color: $white;
+      }
+    }
+
+    .disability-list {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .title-margin {
+      margin-bottom: 11px;
+    }
+
+    .pronouns-wrapper {
+      .select-holder .fa-chevron-down {
+        right: 4%;
+        top: 32%;
+        transform: translate(-50%,50%);
+      }
+    } 
+
+    .pronouns-select {
+      margin-top: 45px;
+      margin-bottom: 84px;
+    }
+
+    .equal-opportunity-select-wrapper,
+    .hispanic-latino-select-wrapper {
+      margin-top: 86px;
+    }
+
+    .gender-title,
+    .latino-title {
+      margin-bottom: 36px;
+    }
+
+    .enthnicity-title {
+      margin-top: 86px;
+    }
+
+    .veteran-wrapper {
+      margin-top: 78px;
+    }
+
+    .veteran-title {
+      margin-bottom: 37px;
+    }
+
+    .disablity-wrapper {
+      margin-top: 85px;
+    }
+
+    .voluntary-title {
+      margin-bottom: 33px;
+    }
+
+    .complete-form-content {
+      margin-bottom: 82px;
+    }
+
+    .disability-description-title,
+    .disability-list-title,
+    .complete-form-title {
+      margin-bottom: 31px;
+    }
+
+    .disability-description,
+    .disability-list {
+      margin-bottom: 90px;
+    }
+    .disability-status-title {
+      margin-bottom: 36px;
+    }
+
+  
+    .notice-title {
+      margin-bottom: 31px;
+    }
+
+    .notice-content {
+      margin-bottom: 88px;
+    }
+
+    .btn-send {
+      margin-bottom: 180px;
+    }
+
+    .veteran-select,
+    .disability-status-select {
+      width: 100%;
+
+      background-color: $white;
+      border-radius: 7px;
+      box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.3);
+    }
+
+    .pronouns-select,
+    .gender-select,
+    .latino-select {
+      width: 350px;
+
+      background-color: $white;
+      border-radius: 7px;
+      box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@include respond-to(lg) {
+  .career-description {
+    .career-desc-title-wrapper {
+      white-space: inherit;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .career-description {
+    .career-desc-title-wrapper {
+      white-space: inherit;
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .career-description {
+    .career-desc-banner-wrapper {
+      padding-top: 40px;
+    }
+
+    .job-description-wrapper {
+      padding-top: 0;
+    }
+
+    .job-description-duties {
+      flex-direction: column;
+    }
+
+    .job-description-duties-holder-left {
+      .t-h4 {
+        margin-bottom: 20px;
+      }
+    }
+
+    .job-description-duties-holder {
+      padding-left: 23px;
+    }
+
+    .career-apply-job-wrapper {
+      .notice-content {
+        margin-bottom: 60px;
+      }
+    }
+
+    .career-apply-job-wrapper {
+      .btn-send {
+        margin-bottom: 60px;
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .career-description {
+    .career-width {
+      width: 546px;
+      margin: 0 auto;
+    }
+
+    .career-apply-job-wrapper {
+      .apply-job-form {
+        .input-apply {
+          width: 220px;
+        }
+      }
+    }
+
+    .career-desc-title-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+
+      white-space: normal;
+
+      p {
+        margin-bottom: 15px;
+        width: 80%;
+      }
+
+      .btn-lg {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .career-description {
+    .career-width {
+      padding-left: 30px;
+      padding-right: 30px;
+      width: 100%;
+    }
+
+    .select-holder {
+      width: 100%;
+    }
+
+    .career-apply-job-wrapper {
+      .apply-title {
+        margin-bottom: 32px;
+      }
+
+      .btn-send {
+        margin-bottom: 120px;
+      }
+
+      .apply-job-form {
+        .name-holder,
+        .contact-email-holder,
+        .profile-holder {
+          flex-direction: column;
+          margin-bottom: 0px;
+
+          .mr {
+            margin-right: 0;
+          }
+
+          .mb {
+            margin-top: 12px;
+          }
+        }
+
+        .input-apply {
+          // margin-bottom: 41px;
+          width: 100%;
+        }
+
+        .resume-holder {
+          margin-top: 0px;
+          margin-bottom: 41px;
+        }
+      }
+
+      .pronouns-select,
+      .gender-select,
+      .latino-select {
+        width: 100%;
+      }
+    }
+
+    .career-desc-title-wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+
+      white-space: normal;
+
+      p {
+        margin-bottom: 10px;
+        width: 90%;
+      }
+
+      .btn-lg {
+        margin-left: 0px;
+      }
+    }
+
+    .career-desc-banner-wrapper {
+      height: 450px;
+
+      .career-desc-banner-holder {
+        padding-top: 50px;
+
+        .btn-sm {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+
+  .input-error-message {
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+}

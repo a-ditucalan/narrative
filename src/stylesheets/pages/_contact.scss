@@ -1,0 +1,378 @@
+.contact-form {
+  .contact-form-wrapper {
+    @extend %content-width;
+  }
+
+  .contact-form-holder {
+    display: flex;
+    margin-top: 95px;
+  }
+
+  .contact-select {
+    margin-top: 11px;
+    width: 380px;
+    height: 60px;
+
+    font-size: 16px;
+    font-weight: 300;
+
+    background-color: #ffffff;
+  }
+
+  .input-invi-wrapper {
+    margin-top: 11px;
+  }
+
+  .input-label-required {
+    color: $red;
+  }
+
+  textarea {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 100%;
+    height: 220px;
+
+    background-color: #ffffff;
+  }
+
+  .t-sub1 {
+    margin-bottom: 41px;
+  }
+
+  .message.t-sub1 {
+    margin-bottom: 39px;
+  }
+
+  .select-holder {
+    position: relative;
+    width: fit-content;
+
+    select {
+      padding-left: 31px;
+      padding-right: 31px;
+      margin-bottom: 56px;
+
+      border-radius: 7px;
+      box-shadow: 0 7px 5px -5px rgba(0, 0, 0, 0.3);
+
+      background-image: url('assets/images/icon-down-caret.svg'), linear-gradient(#fff 50%, $s-lightest);
+      background-position: calc(100% - 32px) center;
+      background-repeat: no-repeat;
+    }
+  }
+  
+  .contact-form-content-message {
+    width: 255px;
+  }
+
+  .contact-form-content {
+    flex-basis: auto;
+    width: 825px;
+    margin-left: 30px;
+  }
+
+  .name-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .name-holder {
+    width: 380px;
+
+    .lastname {
+      width: 100%;
+    }
+  }
+
+  .email-direct-holder {
+    display: flex;
+  }
+
+  .email-direct-wrapper {
+    margin-top: 181px;
+    margin-bottom: 179px;
+
+    .email-inquiries {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+    }
+
+    .clipboard {
+      position: absolute;
+      top: 100%;
+      left: 0;
+
+      display: block;
+      padding-left: 45px;
+      width: 100%;
+      max-height: 0px;
+      overflow: hidden;
+
+      color: $white;
+      background-color: $blue;
+      transition: .2s;
+    }
+
+    .email-direct-content-wrapper {
+      position: relative;
+      margin-bottom: 40px;
+      margin-right: 65px;
+
+      &.active {
+        .email-direct-content-container {
+          border: 1px $blue solid;
+          border-bottom-left-radius: 0px;
+          border-bottom-right-radius: 0px;
+          box-shadow: none !important;
+        }
+
+        .clipboard {
+          max-height: 20px;
+        }
+      }
+    }
+
+    .email-direct-content-container {
+      padding: 25px 45px;
+      width: 380px;
+      height: 120px;
+
+      background-color: $s-lightest;
+      border: 1px $s-lightest solid;
+      border-radius: 5px;
+
+      cursor: pointer;
+      transition: .2s;
+
+      &:hover {
+        box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
+      }      
+    }
+
+    .email-direct-title {
+      margin-bottom: 20px;
+    }
+
+    .email-direct-content-container:nth-child(2) {
+      margin-right: 0px;
+    }
+
+    .email-title {
+      flex-basis: 28%;
+    }
+  }
+
+  .contact-office {
+    margin-bottom: 180px;
+  }
+}
+
+@include respond-to(lg-down) {
+  .contact-form {
+    .contact-form-content {
+      flex-grow: 1;
+      width: auto;
+    }
+
+    .name-holder {
+      width: auto;
+    }
+
+    .email-direct-wrapper {
+      .email-direct-content-wrapper {
+        margin-right: 30px;
+      }
+      
+      .email-direct-content-container {
+        width: 321px;
+      }
+    }
+  }
+}
+
+@include respond-to(md-down) {
+  .contact-form {
+    .banner-wrapper {
+      height: 450px;
+    }
+
+    .contact-form-content-message {
+      width: 25%;
+    }
+
+    textarea {
+      width: 100%;
+      height: 220px;
+
+      font-size: 16px;
+    }
+    .email-direct-wrapper {
+      .email-direct-content-wrapper {
+        margin-right: 30px;
+      }
+
+      .email-direct-content-container {
+        width: 240px;
+      }
+    }
+
+    .email-title {
+      p {
+        font-size: 18px;
+      }
+    }
+
+    .contact-office {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .contact-form {
+    .contact-form-content {
+      margin-left: 0px;
+    }
+
+    .banner-wrapper {
+      height: 400px;
+    }
+
+    .contact-form-holder {
+      flex-direction: column;
+      margin-top: 40px;
+    }
+
+    .contact-form-content-message {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    .contact-select {
+      width: 220px;
+      height: 50px;
+
+      font-size: 16px;
+    }
+
+    .name-wrapper {
+      flex-direction: column;
+    }
+
+    textarea {
+      width: 100%;
+      height: 220px;
+    }
+
+    .email-direct-wrapper {
+      .email-direct-holder {
+        flex-direction: column;
+      }
+
+      .email-direct-content-wrapper {
+        margin-right: 20px;
+      }
+      
+      .email-direct-content-container {
+        width: 240px;
+      }
+
+      .email-title {
+        flex-basis: auto;
+        margin: 40px 0;
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .email-direct-wrapper {
+      margin-top: 100px;
+      margin-bottom: 100px;
+    }
+
+    .contact-office {
+      margin-bottom: 60px;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .contact-form {
+
+    .select-holder{ 
+      width: 100%;
+    }
+    
+    .t-header-lg {
+      font-size: 28px;
+      line-height: 35px;
+    }
+
+    .t-header-sm {
+      font-size: 18px;
+    }
+
+    .banner-wrapper {
+      height: 350px;
+    }
+
+    .contact-form-content {
+      margin-left: 0px;
+    }
+
+    .contact-form-holder {
+      margin-top: 50px;
+      flex-direction: column;
+    }
+
+    .t-header-bold-sm {
+      margin: 20px 0px;
+      font-size: 20px;
+      line-height: 25px;
+    }
+
+    .contact-form #firstname,
+    .contact-form #lastname,
+    .contact-form #email,
+    .contact-form .contact-select {
+      width: 100%;
+      height: 50px;
+      font-size: 20px;
+    }
+    .name-wrapper {
+      flex-direction: column;
+    }
+    textarea {
+      width: 100%;
+    }
+
+    .email-direct-wrapper {
+      margin-top: 80px;
+      margin-bottom: 40px;
+      .email-direct-content-container {
+        margin-right: 0px;
+        width: 100%;
+      }
+
+      .email-direct-content-wrapper {
+        margin-right: 0px;
+      }
+      
+      .email-inquiries {
+        justify-content: center;
+      }
+    }
+
+    .email-direct-holder {
+      flex-direction: column;
+    }
+
+    .contact-office {
+      margin-bottom: 80px;
+    }
+  }
+}

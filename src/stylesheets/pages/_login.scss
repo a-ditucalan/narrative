@@ -1,0 +1,170 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 15px;
+  min-height: 100vh;
+
+  background-image: linear-gradient(to bottom, #0033ef, #0074ff);
+
+  .a-blue {
+    transition: .2s;
+
+    &:hover {
+      color: $blue-dark;
+    }
+  }
+
+  .input-error-message {
+    &.relative {
+      margin-top: 0;
+    }
+  }
+
+  .holder-form {
+    padding: 53px 72px 60px;
+    width: 560px;
+    max-width: 100%;
+
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 50px 60px -10px rgba(0,0,0,.2);
+  }
+
+  .form-default {
+    margin-top: 15px;
+  }
+
+  .form-title {
+    text-align: center;
+  }
+
+  .form-group {
+    justify-content: space-between;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    max-width: 100%;
+
+    ~ .form-group {
+      margin-top: 15px;
+    }
+  }
+
+  .btn-wob {
+    margin-top: 80px;
+  }
+
+  .link-reset {
+    align-self: flex-end;
+    margin-right: 2px;
+    margin-bottom: -7px;
+
+    text-decoration: none;
+  }
+
+  .holder-navs {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: 60px;
+    width: 560px;
+    max-width: 100%;
+
+    .logo-narrative {
+      display: flex;
+    }
+  }
+
+  .link {
+    color: #fff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    ~ .link {
+      margin-left: 26px;
+    }
+  }
+}
+
+@include respond-to(sm-down) { 
+  .login {
+    display: block;
+    padding: 50px 20px;
+
+    .holder-form {
+      margin: 0 auto;
+    }
+
+    .holder-navs {
+      margin: 40px auto 0;
+    } 
+  }
+}
+
+ @include respond-to(xs) {
+  .login {
+    padding: 50px 30px;
+
+    .holder-form {
+      padding: 20px 10px;
+    }
+
+    .t-h2 {
+      font-size: 35px;
+    }
+
+    .form-group {
+      justify-content: center;
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+
+    .btn-wob {
+      padding-right: 30px;
+      padding-left: 30px;
+      margin-top: 30px;
+      height: 45px;
+      width: 100%;
+
+      font-size: 13px;
+    }
+
+    .link-reset {
+      margin-top: 15px;
+      margin-bottom: 0;
+    }
+
+    .holder-navs {
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    .logo-narrative {
+      margin-bottom: 20px;
+    }
+
+    .navs {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 100%;
+    }
+
+    .link {
+      padding: 15px 10px;
+      
+      text-align: center;
+
+      ~ .link {
+        margin-left: 0;
+      }
+    }
+  }
+}
+

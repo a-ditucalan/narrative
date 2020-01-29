@@ -1,0 +1,32 @@
+<svg width="165" height="243" xmlns="http://www.w3.org/2000/svg">
+
+ <g>
+  <title>background</title>
+  <rect fill="none" id="canvas_background" height="245" width="167" y="-1" x="-1"/>
+ </g>
+ <g>
+  <title>Layer 1</title>
+  <g id="svg_1" fill-rule="nonzero" fill="none">
+   <path id="svg_2" d="m60.822,85l11.178,11.178l0,30.822l-72,0l0,-42l60.822,0z" fill="#E6E6E6"/>
+   <path id="svg_3" d="m10.5,116.425l21.5,0m-21.5,-8l21.5,0m-21.5,-8l21.5,0" stroke-width="3" stroke-linecap="square" stroke="#FFF"/>
+   <path id="svg_4" d="m93.822,139.5l11.178,11.178l0,30.822l-72,0l0,-42l60.822,0z" fill="#E6E6E6"/>
+   <path id="svg_5" d="m43.5,170.925l21.5,0m-21.5,-8l21.5,0m-21.5,-8l21.5,0" stroke-width="3" stroke-linecap="square" stroke="#FFF"/>
+   <g id="svg_6">
+    <path id="svg_7" d="m189.822,40l11.178,11.178l0,30.822l-72,0l0,-42l60.822,0z" fill="#E6E6E6"/>
+    <path id="svg_8" d="m139.5,71.425l21.5,0m-21.5,-8l21.5,0m-21.5,-8l21.5,0" stroke-width="3" stroke-linecap="square" stroke="#FFF"/>
+   </g>
+   <g id="svg_9">
+    <path id="svg_10" d="m103.202,0l8.583,8.583l0,23.667l-55.285,0l0,-32.25l46.702,0z" fill="#E6E6E6"/>
+    <path id="svg_11" d="m64.562,24.13l16.51,0m-16.51,-6.143l16.51,0m-16.51,-6.375l16.51,0" stroke-width="2" stroke-linecap="square" stroke="#FFF"/>
+   </g>
+   <g id="svg_12">
+    <path id="svg_13" d="m173.202,110l8.583,8.583l0,23.667l-55.285,0l0,-32.25l46.702,0z" fill="#E6E6E6"/>
+    <path id="svg_14" d="m134.562,134.13l16.51,0m-16.51,-6.143l16.51,0m-16.51,-6.375l16.51,0" stroke-width="2" stroke-linecap="square" stroke="#FFF"/>
+   </g>
+   <g id="svg_15">
+    <path id="svg_16" d="m123.202,210l8.583,8.583l0,23.667l-55.285,0l0,-32.25l46.702,0z" fill="#E6E6E6"/>
+    <path id="svg_17" d="m84.562,234.13l16.51,0m-16.51,-6.143l16.51,0m-16.51,-6.375l16.51,0" stroke-width="2" stroke-linecap="square" stroke="#FFF"/>
+   </g>
+  </g>
+ </g>
+</svg>

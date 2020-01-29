@@ -1,0 +1,86 @@
+.pricing-cta {
+  @extend %header-space-top;
+  @extend %content-width;
+
+  padding-right: 190px;
+  padding-left: 190px;  
+}
+
+.pricing-cta-intro {
+  margin-top: 58px;
+
+  text-align: center;
+
+  .t-header-sm {
+    position: relative;
+    top: -5px;
+  
+    margin-bottom: 79px;
+  }
+
+  .logo-acquire {
+    width: 362px;
+  }
+
+  .logo-distribute {
+    width: 455px;
+  }
+}
+
+.pricing-cta-form {
+  margin-top: 58px;
+  margin-bottom: 180px;
+
+  .form-input-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .input-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 41px;
+    width: 350px;
+
+    .t-sub1 {
+      margin-bottom: 11px;
+    }
+  }
+
+  .input-required {
+    margin-left: 5px;
+
+    color: $red;
+  }
+
+  .input-submit {
+    margin-top: 19px;
+  }
+}
+
+@include respond-to(lg-down) {
+  .pricing-cta {
+    padding-left: 95px;
+    padding-right: 95px;
+  }
+}
+
+@include respond-to(md-down) {
+  .pricing-cta-form {
+    .input-wrapper {
+      width: 100%
+    }
+  }
+}
+
+@include respond-to(sm-down) {
+  .pricing-cta {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .pricing-cta-form {
+    margin-bottom: 100px;
+  }
+}

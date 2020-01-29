@@ -1,0 +1,134 @@
+.oops {
+  @extend %header-space-top;
+  @extend %content-width;
+
+  margin-top: 38px;
+  margin-bottom: 300px;
+}
+
+.oops-title {
+  margin-bottom: 90px;
+
+  color: $blue;
+}
+
+.oops-number {
+  font-family: $font-euclid, $text-font-stack;
+  font-size: 200px;
+  font-weight: 600;  
+  line-height: 1;
+
+  margin-right: 34px;
+}
+
+.oops-content {
+  display: flex;
+}
+
+.oops-info {
+  margin-right: 86px;
+  width: 576px;
+
+  .t-h2 {
+    margin-bottom: 16px;
+
+    line-height: 1.3;
+  }
+}
+
+.oops-buttons {
+  display: flex;
+  margin-top: 34px;
+
+  .btn:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.oops-gif {
+  width: 315px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@include respond-to(lg-down) {
+  .oops {
+    margin-bottom: 150px;
+  }
+  .oops-title {
+    margin-bottom: 40px;
+  }
+  
+  .oops-number {
+    font-size: 162px;
+  }
+
+  .oops-info {
+    width: 488px;
+  }
+}
+
+@include respond-to(md-down) {
+  .oops {
+    margin-bottom: 100px;
+  }
+
+  .oops-title,
+  .oops-number,
+  .oops-text {
+    display: block;
+
+    text-align: center;
+  }
+
+  .oops-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .oops-gif {
+    order: -1;
+    margin-bottom: 38px;
+  }
+
+  .oops-info {
+    margin: auto;
+
+    text-align: center;
+  }
+
+  .oops-buttons {
+    justify-content: center;
+  }
+}
+
+@include respond-to(xs) {
+  .oops {
+    margin-bottom: 48px;
+  }
+  
+  .oops-info {
+    width: 100%;
+  }
+
+  .oops-buttons {
+    display: flex;
+    flex-direction: column;
+
+    .btn:not(:last-child) {
+      margin-right: 0;
+    }
+
+    .btn {
+      padding-left: 25px;
+      padding-right: 25px;
+      height: 40px;
+
+      margin-bottom: 12px;
+    }
+  }
+}

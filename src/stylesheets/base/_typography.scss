@@ -1,0 +1,320 @@
+/**
+ * Basic typography style for copy text
+ */
+body {
+  color: $black;
+  font-family: $font-inter-ui, $text-font-stack;
+  font-size: 125% / 1.4;
+  font-weight: normal;
+}
+
+// Typography presets (.t-preset)
+
+//H1 Euclid Circular A Semi Bold - 76
+.t-h1 {
+  font-family: $font-euclid, $text-font-stack;
+  font-size: 76px;
+  font-weight: 600;
+}
+
+//H2 Euclid Circular A Semi Bold - 46
+.t-h2 {
+  font-family: $font-euclid, $text-font-stack;
+  font-size: 46px;
+  font-weight: 600;
+}
+
+//H3 Euclid Circular A Semi Bold - 34
+.t-h3 {
+  font-family: $font-euclid, $text-font-stack;
+  font-size: 34px;
+  font-weight: 600;
+}
+
+//H4 Euclid Circular A Semi Bold - 22
+.t-h4 {
+  font-family: $font-euclid, $text-font-stack;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+//H5 Inter UI Semi Bold - 16
+.t-h5 {
+  font-family: $font-inter-ui, $text-font-stack;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+//SUB1 Inter UI Semi Bold - 14
+.t-sub1 {
+  font-family: $font-inter-ui, $text-font-stack;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+//SUB2 Inter UI Semi Bold - 12
+.t-sub2 {
+  font-family: $font-inter-ui, $text-font-stack;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+/* 
+* Header body 22
+* Euclid Circular A Regular
+* Line: 34
+*/
+.t-header-sm {
+  font-family: $font-euclid, $text-font-stack;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+/* 
+* Header body 22
+* Euclid Circular A Regular
+* Line: 34
+*/
+.t-header-bold-sm {
+  font-family: $font-euclid, $text-font-stack;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 34px;
+}
+
+/* 
+* Header body 34
+* Euclid Circular A Light
+* Line: 34
+*/
+.t-header-md {
+  font-family: $font-euclid, $text-font-stack;
+  font-size: 34px;
+  font-weight: 300;
+  line-height: 46px;
+}
+
+/* 
+* Header body 46
+* Euclid Circular A Regular
+* Line: 60
+*/
+.t-header-lg {
+  font-family: $font-euclid, $text-font-stack;
+  font-size: 46px;
+  font-weight: 600;
+  line-height: 60px;
+}
+
+/* 
+* Header body 46
+* Euclid Circular A Regular
+* Line: 60
+*/
+.t-header-normal-lg {
+  font-family: $font-euclid, $text-font-stack;
+  font-size: 46px;
+  font-weight: 300;
+  line-height: 60px;
+}
+
+/* 
+* header Body
+* EuclidCircularA-Semibold
+* Line: 34
+*/
+.t-header-nav {
+  margin: 0px;
+  font-family: $font-euclid, $text-font-stack;
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 51px;
+}
+
+/* 
+* Body copy 14
+* Inter UI Regular 
+* Line: 24
+*/
+.t-body-sm {
+  font-family: $font-inter-ui, $text-font-stack;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* 
+* Body copy 16
+* Inter UI Regular 
+* Line: 28
+*/
+.t-body-md {
+  font-family: $font-inter-ui, $text-font-stack;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+/* 
+* Body copy 16
+* Inter UI Regular 
+* Line: 28
+*/
+.t-body-bold-md {
+  font-family: $font-inter-ui, $text-font-stack;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 28px;
+}
+
+/* 
+* Body copy 18
+* Inter UI Regular 
+* Line: 34
+*/
+.t-body-lg {
+  font-family: $font-inter-ui, $text-font-stack;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 34px;
+}
+
+.t-body-xs {
+  font-family: $font-inter-ui, $text-font-stack;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.t-tags {
+  font-family: $font-inter-ui, $text-font-stack;
+  font-size: 12px;
+  font-weight: 600;
+  color: $gray;
+  text-transform: uppercase;
+}
+
+.t-action {
+  @extend .t-tags;
+
+  color: $blue;
+  text-decoration: none;
+
+  cursor: pointer;
+}
+
+.t-uppercase {
+  text-transform: uppercase;
+}
+
+.a-blue {
+  color: $blue;
+  text-decoration: none;
+}
+
+@include respond-to(lg) {
+  .t-header-md {
+    font-size: 28px;
+  }
+}
+
+@include respond-to(md) {
+  .t-header-sm {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .t-h1 {
+    font-size: 65px;
+    line-height: 70px;
+  }
+
+  .t-h2 {
+    font-size: 35px;
+  }
+
+  .t-header-md {
+    font-size: 24px;
+    line-height: 35px;
+  }
+
+  .t-header-lg {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+@include respond-to(sm) {
+  .t-header-sm {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .t-h1 {
+    font-size: 65px;
+    line-height: 70px;
+  }
+
+  .t-h2 {
+    font-size: 32px;
+  }
+
+  .t-h3 {
+    font-size: 28px;
+  }
+
+  .t-h4 {
+    font-size: 18px;
+  }
+
+  .t-header-md {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .t-header-lg {
+    font-size: 35px;
+    line-height: 40px;
+  }
+}
+
+@include respond-to(xs) {
+  .t-header-sm {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .t-header-md {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .t-h1 {
+    font-size: 50px;
+    line-height: 1.3;
+  }
+
+  .t-h2 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .t-h3 {
+    font-size: 26px;
+  }
+
+  .t-h4 {
+    font-size: 18px;
+  }
+
+  .t-header-lg {
+    font-size: 28px;
+    line-height: 35px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .t-h1 {
+    font-size: 13vw;
+  }
+}

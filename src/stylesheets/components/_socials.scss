@@ -1,0 +1,18 @@
+[class*="fa-"] {
+  path {
+    transition: fill .2s;
+  }
+}
+
+.social-interaction:hover {
+  .fa-twitter {
+    path {
+      fill: $c-twitter;
+    }
+  }    
+  .fa-linkedin {
+    path {
+      fill: $c-linkedin;
+    }
+  } 
+}
